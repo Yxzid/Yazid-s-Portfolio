@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yazid Ali Askar | Engineering Graduate</title>
-    <meta name="description" content="Portfolio of Yazid Ali Askar — MSc Engineering with Management, King's College London. Open to graduate roles in Sales Engineering, Associate Engineering and beyond.">
+    <meta name="description" content="Portfolio of Yazid Ali Askar, MSc Engineering with Management, King's College London. Open to graduate roles in Sales Engineering, Associate Engineering and beyond.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,13 +15,14 @@
     <!-- ===== NAVBAR ===== -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">YAA</a>
+            <a href="#hero" class="nav-logo">Y.A.A</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -32,13 +33,14 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#10005;</button>
         <ul>
             <li><a href="#about" onclick="closeMobile()">About</a></li>
             <li><a href="#experience" onclick="closeMobile()">Experience</a></li>
             <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
             <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
             <li><a href="#education" onclick="closeMobile()">Education</a></li>
+            <li><a href="#interests" onclick="closeMobile()">Interests</a></li>
             <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
         </ul>
     </div>
@@ -56,9 +58,9 @@
                 <span class="role-static">Aspiring </span><span class="role-dynamic" id="roleDynamic"></span><span class="cursor">|</span>
             </div>
             <p class="hero-summary">
-                MSc Engineering with Management graduate from King's College London —
-                ranked 1st in my cohort. I blend technical depth with strong client communication
-                to turn complex problems into clear solutions.
+                MSc Engineering with Management graduate from King's College London,
+                scoring 98/100 in Systems Design. I blend technical depth with strong client
+                communication to turn complex problems into clear solutions.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -90,13 +92,12 @@
             </div>
             <div class="about-grid">
                 <div class="about-photo">
-                    <!-- Replace src with your photo path e.g. src="photo.jpg" -->
                     <div class="photo-frame" id="photoFrame">
                         <img src="Photo.jpg" alt="Yazid Ali Askar" id="profilePhoto" onerror="this.style.display='none'; document.getElementById('photoInitials').style.display='flex';">
-                        <div class="photo-initials" id="photoInitials">YAA</div>
+                        <div class="photo-initials" id="photoInitials">Y.A.A</div>
                     </div>
                     <div class="photo-badge">
-                        <span>📍 London, UK</span>
+                        <span>&#128205; London, UK</span>
                     </div>
                 </div>
                 <div class="about-text">
@@ -105,20 +106,20 @@
                         <strong>technical rigour</strong> and <strong>human understanding</strong>.
                     </p>
                     <p>
-                        Growing up in the UAE, studying across two UK universities, and interning in India —
+                        Growing up in the UAE, studying across two UK universities, and interning in India,
                         I've built the adaptability and cross-cultural communication that let me work with
                         anyone, anywhere. I speak three languages and have visited 21+ countries.
                     </p>
                     <p>
-                        At King's College London I ranked <strong>1st in my cohort of 50+</strong>, scoring
-                        98/100 in Systems Design and 97/100 in Operations Management. I thrive in roles that
-                        blend deep product knowledge with client-facing work — whether that's simplifying a
+                        At King's College London I scored <strong>98/100 in my Systems Design project</strong>,
+                        ranking 1st in the module, and 97/100 in Operations Management. I thrive in roles that
+                        blend deep product knowledge with client-facing work, whether that's simplifying a
                         technical concept or translating a customer problem into an engineering solution.
                     </p>
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number">1<sup>st</sup></span>
-                            <span class="stat-label">KCL Cohort</span>
+                            <span class="stat-number">98<sup>/100</sup></span>
+                            <span class="stat-label">Top Module Score</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">3</span>
@@ -146,11 +147,12 @@
                 <h2>Where I've Worked</h2>
             </div>
             <div class="timeline">
+
                 <!-- Honda -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Jun – Sep 2024</span>
+                        <span class="timeline-date">Jun - Sep 2024</span>
                         <div class="timeline-card">
                             <div class="timeline-header">
                                 <div>
@@ -160,24 +162,28 @@
                                 <span class="company-badge honda">Honda</span>
                             </div>
                             <ul class="timeline-bullets">
-                                <li>Advised <strong>100+ customers monthly</strong> on product selection and finance options, explaining technical features clearly — improved plan adoption by <strong>15%</strong></li>
-                                <li>Supported vehicle diagnostics through structured fault-finding, reducing repeat service visits</li>
-                                <li>Hands-on engine strip-down, inspection, reassembly and routine servicing (oil, brakes, basic electrical)</li>
+                                <li>Advised <strong>100+ customers monthly</strong> on product selection, finance options and technical features, improving plan adoption by <strong>15%</strong> through clear, confident communication</li>
+                                <li>Built product expertise across Honda's range to answer technical queries on the spot, bridging the gap between engineering specification and customer understanding</li>
+                                <li>Supported structured fault diagnostics through test rides and fault-finding, helping the service team identify root causes faster and reduce repeat visits</li>
+                                <li>Hands-on engine strip-down, inspection, reassembly and routine servicing including oil changes, brake checks and basic electrical diagnostics under supervision</li>
+                                <li>Worked in a fast-paced dealership environment managing competing priorities, customer queries and workshop tasks simultaneously</li>
                             </ul>
                             <div class="timeline-tags">
                                 <span>Customer Advisory</span>
                                 <span>Technical Diagnostics</span>
                                 <span>Sales</span>
                                 <span>Workshop Engineering</span>
+                                <span>Product Knowledge</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Zee Stores -->
                 <div class="timeline-item">
                     <div class="timeline-dot dot-2"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Jun – Sep 2023</span>
+                        <span class="timeline-date">Jun - Sep 2023</span>
                         <div class="timeline-card">
                             <div class="timeline-header">
                                 <div>
@@ -187,20 +193,24 @@
                                 <span class="company-badge zee">Zee Stores</span>
                             </div>
                             <ul class="timeline-bullets">
-                                <li>Built daily/weekly stock and sales reports in <strong>Excel and Oracle</strong>, improving reporting accuracy for accounting and sales teams</li>
-                                <li>Streamlined data management workflows, boosting sales process efficiency by <strong>20%</strong></li>
-                                <li>Coordinated import/export shipments while maintaining <strong>100% inventory accuracy</strong></li>
+                                <li>Built daily and weekly stock and sales reports in <strong>Excel and Oracle</strong>, improving reporting accuracy and supporting both the accounting and sales teams with reliable data</li>
+                                <li>Identified inefficiencies in data management workflows and proposed process improvements, boosting overall sales process efficiency by <strong>20%</strong></li>
+                                <li>Coordinated high-volume import and export shipments end-to-end while maintaining <strong>100% inventory accuracy</strong> across all operations</li>
+                                <li>Acted as a cross-functional liaison between accounting, sales and logistics teams, developing a clear understanding of how these functions connect in daily operations</li>
+                                <li>Gained hands-on experience with Oracle ERP systems, managing live stock data and reconciling discrepancies against physical inventory</li>
                             </ul>
                             <div class="timeline-tags">
                                 <span>Excel</span>
-                                <span>Oracle</span>
+                                <span>Oracle ERP</span>
                                 <span>Logistics</span>
                                 <span>Data Reporting</span>
                                 <span>Inventory Management</span>
+                                <span>Process Improvement</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -211,11 +221,12 @@
             <div class="section-header">
                 <span class="section-tag">Projects</span>
                 <h2>What I've Built</h2>
+                <p class="section-sub">Click any project to view the full dissertation PDF.</p>
             </div>
             <div class="projects-grid">
 
                 <!-- Featured: MSc Dissertation -->
-                <div class="project-card featured">
+                <a href="dissertation-msc.pdf" target="_blank" rel="noopener" class="project-card featured project-link">
                     <div class="project-stripe stripe-teal"></div>
                     <div class="project-meta">
                         <span class="project-tag">MSc Dissertation · King's College London</span>
@@ -223,9 +234,11 @@
                     </div>
                     <h3>UK Household Electricity Demand Model</h3>
                     <p>
-                        Developed a Python-based stochastic simulation model of UK household appliance electricity
-                        demand. Ran 10,000-iteration Monte Carlo analysis to quantify uncertainty across demand
-                        scenarios, then validated the outputs against the official ECUK 2023 dataset.
+                        Developed a Python-based stochastic simulation model to estimate UK household appliance
+                        electricity demand across different usage scenarios. Ran a 10,000-iteration Monte Carlo
+                        simulation to quantify uncertainty in demand forecasts, then validated model outputs
+                        against the official ECUK 2023 dataset. The work contributes to understanding residential
+                        energy consumption patterns, relevant to grid planning and the UK's net zero targets.
                     </p>
                     <div class="project-tech">
                         <span>Python</span>
@@ -233,32 +246,44 @@
                         <span>Statistical Modelling</span>
                         <span>ECUK 2023</span>
                         <span>Energy Systems</span>
+                        <span>Stochastic Analysis</span>
                     </div>
-                </div>
+                    <div class="project-pdf-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        View PDF
+                    </div>
+                </a>
 
                 <!-- Autonomous Vehicle -->
-                <div class="project-card">
+                <a href="dissertation-beng.pdf" target="_blank" rel="noopener" class="project-card project-link">
                     <div class="project-stripe stripe-blue"></div>
                     <div class="project-meta">
-                        <span class="project-tag">BEng Dissertation · University of Surrey</span>
+                        <span class="project-tag">BEng Project · University of Surrey</span>
                         <span class="result-badge">First Class · Project Leader</span>
                     </div>
                     <h3>Autonomous Disaster-Response Vehicle</h3>
                     <p>
-                        Led a multidisciplinary team to design an autonomous vehicle concept for disaster response.
-                        Coordinated CAD and sensing system workstreams — delivering the full concept using
-                        Fusion 360 and MATLAB Simulink.
+                        Led a multidisciplinary team to design a fully autonomous vehicle concept for use in
+                        disaster response scenarios where human access is unsafe. Defined the system architecture,
+                        coordinated the CAD design stream in Fusion 360 and oversaw the sensing and navigation
+                        logic modelled in MATLAB Simulink. Responsible for integrating team outputs into a
+                        cohesive final report and technical presentation.
                     </p>
                     <div class="project-tech">
                         <span>Fusion 360</span>
                         <span>MATLAB Simulink</span>
                         <span>Systems Design</span>
                         <span>Team Leadership</span>
+                        <span>Robotics</span>
                     </div>
-                </div>
+                    <div class="project-pdf-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        View PDF
+                    </div>
+                </a>
 
                 <!-- Lane Change -->
-                <div class="project-card">
+                <a href="dissertation-lane.pdf" target="_blank" rel="noopener" class="project-card project-link">
                     <div class="project-stripe stripe-amber"></div>
                     <div class="project-meta">
                         <span class="project-tag">Research Project · University of Surrey</span>
@@ -266,17 +291,24 @@
                     </div>
                     <h3>Lane-Change Motion Planner Benchmarking</h3>
                     <p>
-                        Benchmarked multiple lane-change motion planning algorithms in Python, evaluating each
-                        against safety, smoothness, and efficiency metrics to identify optimal approaches for
-                        autonomous vehicle applications.
+                        Conducted a systematic benchmarking study of lane-change motion planning algorithms
+                        used in autonomous vehicles. Implemented multiple planners in Python and evaluated
+                        their performance across three key criteria: safety (collision avoidance), smoothness
+                        (passenger comfort) and efficiency (time and distance). Results provided clear
+                        recommendations on algorithm suitability for real-world deployment.
                     </p>
                     <div class="project-tech">
                         <span>Python</span>
                         <span>Algorithm Analysis</span>
                         <span>Autonomous Systems</span>
+                        <span>Motion Planning</span>
                         <span>Benchmarking</span>
                     </div>
-                </div>
+                    <div class="project-pdf-hint">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        View PDF
+                    </div>
+                </a>
 
             </div>
         </div>
@@ -330,9 +362,9 @@
                     </div>
                     <h3>Languages</h3>
                     <div class="skill-chips">
-                        <span class="chip-native">English — Native</span>
-                        <span class="chip-native">Malayalam — Native</span>
-                        <span class="chip-basic">Arabic — Basic</span>
+                        <span class="chip-native">English (Native)</span>
+                        <span class="chip-native">Malayalam (Native)</span>
+                        <span class="chip-basic">Arabic (Basic)</span>
                     </div>
                 </div>
 
@@ -342,9 +374,9 @@
                     </div>
                     <h3>Currently Learning</h3>
                     <div class="skill-chips">
-                        <span class="chip-learning">Harvard CS50P — Python</span>
+                        <span class="chip-learning">Harvard CS50P (Python)</span>
                     </div>
-                    <p class="skill-note">In progress — expanding programming capabilities</p>
+                    <p class="skill-note">In progress, expanding programming capabilities</p>
                 </div>
 
             </div>
@@ -361,19 +393,21 @@
             <div class="edu-list">
 
                 <div class="edu-card">
-                    <div class="edu-logo kcl">KCL</div>
+                    <div class="edu-logo kcl">
+                        <img src="https://logo.clearbit.com/kcl.ac.uk" alt="King's College London" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span style="display:none">KCL</span>
+                    </div>
                     <div class="edu-body">
                         <div class="edu-top">
                             <div>
                                 <h3>MSc Engineering with Management</h3>
                                 <p class="edu-school">King's College London · London, UK</p>
                             </div>
-                            <span class="edu-date">Sep 2024 – Jan 2026</span>
+                            <span class="edu-date">Sep 2024 - Jan 2026</span>
                         </div>
                         <p class="edu-grade">Merit · 69%</p>
                         <div class="edu-chips">
-                            <span class="chip-highlight">Ranked 1st in cohort (50+ students)</span>
-                            <span>Systems Design: 98/100</span>
+                            <span class="chip-highlight">Ranked 1st: Systems Design Project (98/100)</span>
                             <span>Operations Management: 97/100</span>
                             <span>Systems Engineering: 84%</span>
                             <span>Renewable Power: 70%</span>
@@ -382,19 +416,22 @@
                 </div>
 
                 <div class="edu-card">
-                    <div class="edu-logo surrey">UoS</div>
+                    <div class="edu-logo surrey">
+                        <img src="https://logo.clearbit.com/surrey.ac.uk" alt="University of Surrey" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span style="display:none">UoS</span>
+                    </div>
                     <div class="edu-body">
                         <div class="edu-top">
                             <div>
                                 <h3>BEng Mechanical Engineering (Hons)</h3>
                                 <p class="edu-school">University of Surrey · Guildford, UK</p>
                             </div>
-                            <span class="edu-date">Sep 2021 – Jul 2024</span>
+                            <span class="edu-date">Sep 2021 - Jul 2024</span>
                         </div>
-                        <p class="edu-grade">2:1</p>
+                        <p class="edu-grade">Upper Second Class (2:1)</p>
                         <div class="edu-chips">
-                            <span>Project Leader — Autonomous Vehicle</span>
-                            <span>Lane-Change Benchmarking (1st Class)</span>
+                            <span>Project Leader: Autonomous Vehicle</span>
+                            <span>Lane-Change Benchmarking (First Class)</span>
                             <span>Course Representative (~200 students)</span>
                             <span>Formula Student Team</span>
                         </div>
@@ -402,14 +439,17 @@
                 </div>
 
                 <div class="edu-card">
-                    <div class="edu-logo brighton">BC</div>
+                    <div class="edu-logo brighton">
+                        <img src="https://logo.clearbit.com/brightoncollege.org.uk" alt="Brighton College" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span style="display:none">BC</span>
+                    </div>
                     <div class="edu-body">
                         <div class="edu-top">
                             <div>
                                 <h3>A-Levels &amp; GCSEs</h3>
                                 <p class="edu-school">Brighton College · Abu Dhabi, UAE</p>
                             </div>
-                            <span class="edu-date">Sep 2019 – Jun 2021</span>
+                            <span class="edu-date">Sep 2019 - Jun 2021</span>
                         </div>
                         <div class="edu-chips">
                             <span>Mathematics (A)</span>
@@ -425,13 +465,63 @@
         </div>
     </section>
 
+    <!-- ===== INTERESTS ===== -->
+    <section id="interests" class="section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Beyond Engineering</span>
+                <h2>Outside the Office</h2>
+                <p class="section-sub">What keeps me energised, curious and well-rounded outside of work.</p>
+            </div>
+            <div class="interests-grid">
+
+                <div class="interest-card">
+                    <div class="interest-icon">&#128187;</div>
+                    <h3>Tech &amp; Products</h3>
+                    <p>I follow the consumer tech and product space closely, from new hardware releases to software ecosystems. Understanding how products are built, positioned and sold feeds directly into my engineering mindset.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">&#127940;</div>
+                    <h3>Snowboarding</h3>
+                    <p>One of my favourite ways to switch off. There's a satisfying parallel between learning a technical skill on the mountain and debugging an engineering problem, patience, iteration and commitment.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">&#127940;</div>
+                    <h3>Surfing</h3>
+                    <p>Reading the water and adapting in real time. Surfing has taught me to stay calm under pressure and make fast decisions with incomplete information, useful on a wave and in a client meeting.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">&#127944;</div>
+                    <h3>Basketball</h3>
+                    <p>Former U18 captain at Brighton College. The sport shaped how I think about teamwork, leadership and performing under pressure. I still play regularly to stay competitive and clear-headed.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">&#127947;</div>
+                    <h3>Gym &amp; Fitness</h3>
+                    <p>Consistent training is part of my routine. It builds discipline and mental resilience that carries into every other area of life. I treat it with the same structured approach I bring to engineering projects.</p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">&#9992;&#65039;</div>
+                    <h3>Travelling</h3>
+                    <p>21+ countries across four continents. Travelling has given me cross-cultural fluency, adaptability and a genuine curiosity about people. I'm as comfortable in a boardroom in London as on a bus in Kerala.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section-dark">
+    <section id="contact">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Contact</span>
                 <h2>Let's Talk</h2>
-                <p class="section-sub">Open to graduate roles in engineering, sales engineering, and beyond. Based in London — happy to relocate or work remotely.</p>
+                <p class="section-sub">Open to graduate roles in engineering, sales engineering, and beyond. Based in London, happy to relocate or work remotely.</p>
             </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
@@ -501,7 +591,7 @@
     <!-- ===== FOOTER ===== -->
     <footer>
         <div class="container footer-inner">
-            <span class="footer-logo">YAA</span>
+            <span class="footer-logo">Y.A.A</span>
             <p>Yazid Ali Askar · London, UK · Open to opportunities worldwide</p>
             <div class="footer-links">
                 <a href="https://www.linkedin.com/in/yazid-askar-9a4a43179/" target="_blank" rel="noopener">LinkedIn</a>
