@@ -426,8 +426,7 @@ h3 { font-size: 1.1rem; font-weight: 700; }
     background: linear-gradient(135deg, var(--surface-2), var(--surface));
 }
 
-/* Show initials by default (hidden when image loads) */
-.photo-frame:not(:has(img[style*="display: none"])) .photo-initials { display: flex; }
+/* Initials hidden by default; JS shows them only if image fails */
 
 .photo-badge {
     display: inline-flex;

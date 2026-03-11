@@ -170,19 +170,8 @@ const profilePhoto = document.getElementById('profilePhoto');
 const photoInitials = document.getElementById('photoInitials');
 
 if (profilePhoto) {
-    profilePhoto.addEventListener('load', () => {
-        photoInitials.style.display = 'none';
-        profilePhoto.style.display = 'block';
-    });
-
     profilePhoto.addEventListener('error', () => {
         profilePhoto.style.display = 'none';
         photoInitials.style.display = 'flex';
     });
-
-    // Trigger error check if already errored (cached)
-    if (!profilePhoto.complete || profilePhoto.naturalWidth === 0) {
-        profilePhoto.style.display = 'none';
-        photoInitials.style.display = 'flex';
-    }
 }
