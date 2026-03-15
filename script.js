@@ -46,9 +46,11 @@ mobileClose.addEventListener('click', closeMobile);
    ============================================================ */
 const roles = [
     'Graduate Sales Engineer',
+    'Associate Solutions Engineer',
+    'Graduate Product Manager',
+    'Graduate Project Manager',
     'Associate Engineer',
     'Technical Problem Solver',
-    'Engineering & Management Graduate',
     'Graduate Sales Engineer',   // repeat to weight it
 ];
 
@@ -126,7 +128,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 const contactForm = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const name    = document.getElementById('name').value.trim();
@@ -140,14 +142,32 @@ contactForm.addEventListener('submit', (e) => {
         return;
     }
 
-    const body = `Hi Yazid,\n\nMy name is ${name} (${email}).\n\n${message}`;
-    const mailto = `mailto:yazidaliaskar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    submitBtn.textContent = 'Sending…';
+    submitBtn.disabled = true;
+    formNote.textContent = '';
 
-    window.location.href = mailto;
+    try {
+        const response = await fetch('https://formspree.io/f/xpwzgvjk', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, subject, message })
+        });
 
-    formNote.style.color = 'var(--accent)';
-    formNote.textContent = 'Opening your email client…';
-    setTimeout(() => { formNote.textContent = ''; }, 4000);
+        if (response.ok) {
+            formNote.style.color = 'var(--accent)';
+            formNote.textContent = 'Message sent! I\'ll be in touch soon.';
+            contactForm.reset();
+        } else {
+            throw new Error('Failed');
+        }
+    } catch {
+        formNote.style.color = '#f87171';
+        formNote.textContent = 'Something went wrong. Please email me directly at yazidaliaskar@gmail.com';
+    } finally {
+        submitBtn.textContent = 'Send Message';
+        submitBtn.disabled = false;
+    }
 });
 
 /* ============================================================
