@@ -451,7 +451,8 @@ h3 { font-size: 1.1rem; font-weight: 700; }
 
 .about-lead {
     font-size: 1.1rem !important;
-    color: var(--text) !important;
+    font-weight: 400 !important;
+    color: var(--muted) !important;
 }
 
 .about-stats {
